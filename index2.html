@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/index2.css">
+    <link rel="stylesheet" href="./css/reponsive.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+    <title>Nhân vật tướng ở Liyue</title>
+</head>
+
+<body>
+    <!-- hàng 1 -->
+    <div class="main">
+        <nav>
+            <ul class="toplevel md">
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./index4.html">About</a></li>
+                <li><a href="">Character</a>
+                    <ul class="levelsecond">
+                        <li><a href="./index1.html#diluc">Mondstadt</a></li>
+                        <li><a href="./index2.html#xiao">Liyue</a></li>
+                        <li><a href="./index3.html#ayaka">Inazuma</a>
+                            <ul class="firstlevel">
+                                <li>Đang cập nhật...</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="./index.html"><img src="./img/LOGO.png" alt=""></a>
+                </li>
+
+                <li><a href="./contact.html">Contact</a></li>
+                <li><a href="./order.html">Order</a></li>
+                <li><a target="_blank" href="https://www.youtube.com/c/GenshinImpact">Trailer</a></li>
+            </ul>
+            <label for="menu-mobile" class="fa fa-bars xs" data-toggle="collapse" data-target="#m-mobile" role="button" aria-expanded="false" aria-controls="firstlevel"></label>
+            <input id="menu-mobile" type="checkbox" hidden/>
+            <label for="menu-mobile" id="theme-overlay"></label>
+            <ul id="m-mobile" class="toplevel xs collapse">
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./index4.html">About</a></li>
+                <li>
+                    <a data-toggle="collapse" href="#firstlevel" role="button" aria-expanded="false" aria-controls="firstlevel">
+                Characters
+              </a>
+                    <div class="collapse" id="firstlevel">
+                        <ul>
+                            <li><a href="./index1.html#diluc">&nbsp; Mondstadt</a></li>
+                            <li><a href="./index2.html#xiao">&nbsp; Liyue</a></li>
+                            <li>
+                                <a href="./index3.html#ayaka">
+                            &nbsp; Inazuma
+                        </a><a data-toggle="collapse" href="#firstlevel1" role="button" aria-expanded="false" aria-controls="firstlevel1"><i class="fa fa-chevron-down"></i></a>
+
+                            </li>
+                            <li class="collapse" id="firstlevel1">
+                                <ul class="firstlevel">
+                                    <li>&nbsp; Updating...</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+
+                </li>
+                <li><a href="./contact.html">Contact</a></li>
+                <li><a href="./order.html">Order</a></li>
+                <li><a target="_blank" href="https://www.youtube.com/c/GenshinImpact">Trailer</a></li>
+                <li class="headerlogo">
+                    <a href="./index.html"><img src="./img/LOGO.png" alt=""></a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <!-- Menmu trai -->
+    <nav class="menuleft">
+        <ul>
+            <li>
+                <a href="#xiao">
+                    <img src="./img/avaxiao.png" alt="">
+                    <p>Xiao</p>
+                </a>
+            </li>
+            <li>
+                <a href="#bedou">
+                    <img src="./img/avabedou.png" alt="">
+                    <p>Bedou</p>
+                </a>
+            </li>
+            <li>
+                <a href="#ningguang">
+                    <img src="./img/avaningwang.png" alt="">
+                    <p>Ningguang</p>
+                </a>
+            </li>
+            <li>
+                <a href="#hutao">
+                    <img src="./img/avahutao.png" alt="">
+                    <p>Hutao</p>
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <!-- Noi dung -->
+    <div class="characters">
+        <div id="xiao" class="bg1">
+            <div>
+                <h2>Xiao</h2>
+                <p class="md">Một trong "Tam Nhãn Ngũ Hiển Tiên Nhân" bảo vệ cảng Liyue, còn được gọi là "Hộ Pháp Dạ Xoa Đại Tướng". Tuy có vẻ bề ngoài là một thiếu niên trẻ tuổi, thế nhưng có những truyền thuyết về anh sớm đã được ghi chép trong các cổ tịch ngàn năm.
+                    Vô cùng yêu thích "Đậu Hũ Hạnh Nhân" của nhà trọ Vọng Thư. Cũng là do mùi vị của "Đậu Hũ Hạnh Nhân" rất giống với giấc mộng đẹp.
+                </p>
+                <p class="xs">Một trong "Tam Nhãn Ngũ Hiển Tiên Nhân" bảo vệ cảng Liyue... </p>
+            </div>
+            <img class="imgcharacter md" src="./img/xiao.png" alt="">
+            <img class="imgcharacter xs" src="./img/xiao-xs.png" alt="">
+        </div>
+        <div id="bedou" class="bg2">
+            <div>
+                <h2>Beidou</h2>
+                <p class="md">Thuyền trường "Nam Thập Tự", người có danh vọng khá cao ở Liyue Có người nói rằng cô có thể lấp núi dời sông, một vài người khác lại nói cô có thể dương kiếm dẫn sét, lại có người tin rằng quái vật đáng sợ nơi biển sâu cũng chẳng phải
+                    là kẻ địch của cô. Đối với người ngoài, họ sẽ cho đây là những lời nói nhảm, thế nhưng những ai đã từng sát cánh cùng Beidou đều tin như vậy. "Nếu thật sự có quái vật biển sâu, Beidou có thể chẻ nó ra thành trăm mảnh"
+                </p>
+                <p class="xs">Thuyền trường "Nam Thập Tự", người có danh vọng khá cao ở Liyue...</p>
+            </div>
+            <img class="imgcharacter md" src="./img/bedou.png" alt="">
+            <img class="imgcharacter xs" src="./img/bedou-xs.png" alt="">
+        </div>
+        <div id="ningguang" class="bg3">
+            <div>
+                <h2>Ningguang</h2>
+                <p class="md">Ngồi ở cung điện trên không, có nhiều tin đồn vây quanh, trên khuôn mặt luôn giữ một nụ cười nho nhã thần bí. Là Thiên Quyền Tinh trong "Thất Tinh Liyue", cô không chỉ tượng trưng cho quyền lực và pháp luật, còn là đại diện của tài phú
+                    và trí tuệ.</p>
+                <p class="xs">Ngồi ở cung điện trên không...</p>
+            </div>
+            <img class="imgcharacter md" src="./img/ningwang.png" alt="">
+            <img class="imgcharacter xs" src="./img/ningwang-xs.png" alt="">
+        </div>
+        <div id="hutao" class="bg4">
+            <div>
+                <h2>Hutao</h2>
+                <p class="md">Hu Tao- Đường chủ đời thứ 77 của Vãng Sinh Đường, nhân vật quan trọng phụ tránh tang lễ của Liyue. Tận tâm tận lực hoàn thành nghi lễ tiễn biệt cho mọi người, duy trì sự cân bằng giữa hai thế giới âm dương. Ngoài ra còn là một nhà thơ
+                    thần kỳ, có rất nhiều kiệt tác được người Liyue truyền miệng.
+                </p>
+                <p class="xs">Hu Tao- Đường chủ đời thứ 77 của Vãng Sinh Đường...</p>
+            </div>
+            <img class="imgcharacter md" src="./img/hutao.png" alt="">
+            <img class="imgcharacter xs" src="./img/hutao-xs.png" alt="">
+        </div>
+    </div>
+</body>
+
+</html>

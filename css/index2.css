@@ -1,0 +1,19 @@
+body {
+    background: url(../img/landscape.jpg) no-repeat center center fixed;
+}
+
+.bg1 {
+    background: url(../img/ngto3-2.png) no-repeat center center /40%;
+}
+
+.bg2 {
+    background: url(../img/ngto4-2.png) no-repeat center center /40%;
+}
+
+.bg3 {
+    background: url(../img/ngto6-2.png) no-repeat center center /40%;
+}
+
+.bg4 {
+    background: url(../img/ngto1-2.png) no-repeat center center /40%;
+}

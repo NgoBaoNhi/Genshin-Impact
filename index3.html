@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/index3.css">
+    <link rel="stylesheet" href="./css/reponsive.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+    <title>Nhân vật tướng ở Inazuma</title>
+</head>
+
+<body>
+    <!-- hàng 1 -->
+    <div class="main">
+        <nav>
+            <ul class="toplevel md">
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./index4.html">About</a></li>
+                <li><a href="">Character</a>
+                    <ul class="levelsecond">
+                        <li><a href="./index1.html#diluc">Mondstadt</a></li>
+                        <li><a href="./index2.html#xiao">Liyue</a></li>
+                        <li><a href="./index3.html#ayaka">Inazuma</a>
+                            <ul class="firstlevel">
+                                <li>Đang cập nhật...</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="./index.html"><img src="./img/LOGO.png" alt=""></a>
+                </li>
+
+                <li><a href="./contact.html">Contact</a></li>
+                <li><a href="./order.html">Order</a></li>
+                <li><a target="_blank" href="https://www.youtube.com/c/GenshinImpact">Trailer</a></li>
+            </ul>
+            <label for="menu-mobile" class="fa fa-bars xs" data-toggle="collapse" data-target="#m-mobile" role="button" aria-expanded="false" aria-controls="firstlevel"></label>
+            <input id="menu-mobile" type="checkbox" hidden/>
+            <label for="menu-mobile" id="theme-overlay"></label>
+            <ul id="m-mobile" class="toplevel xs collapse">
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./index4.html">About</a></li>
+                <li>
+                    <a data-toggle="collapse" href="#firstlevel" role="button" aria-expanded="false" aria-controls="firstlevel">
+                Characters
+              </a>
+                    <div class="collapse" id="firstlevel">
+                        <ul>
+                            <li><a href="./index1.html#diluc">&nbsp; Mondstadt</a></li>
+                            <li><a href="./index2.html#xiao">&nbsp; Liyue</a></li>
+                            <li>
+                                <a href="./index3.html#ayaka">
+                            &nbsp; Inazuma
+                        </a><a data-toggle="collapse" href="#firstlevel1" role="button" aria-expanded="false" aria-controls="firstlevel1"><i class="fa fa-chevron-down"></i></a>
+
+                            </li>
+                            <li class="collapse" id="firstlevel1">
+                                <ul class="firstlevel">
+                                    <li>&nbsp; Updating...</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+
+                </li>
+                <li><a href="./contact.html">Contact</a></li>
+                <li><a href="./order.html">Order</a></li>
+                <li><a target="_blank" href="https://www.youtube.com/c/GenshinImpact">Trailer</a></li>
+                <li class="headerlogo">
+                    <a href="./index.html"><img src="./img/LOGO.png" alt=""></a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <!-- Menmu trai -->
+    <nav class="menuleft">
+        <ul>
+            <li>
+                <a href="#ayaka">
+                    <img src="./img/avaayaka.png" alt="">
+                    <p>Diluc</p>
+                </a>
+            </li>
+            <li>
+                <a href="#kazuha">
+                    <img src="./img/avakaedehara.png" alt="">
+                    <p>Diona</p>
+                </a>
+            </li>
+            <li>
+                <a href="#shogun">
+                    <img src="./img/avasogun.png" alt="">
+                    <p>Mona</p>
+                </a>
+            </li>
+            <li>
+                <a href="#kokomi">
+                    <img src="./img/avakokomi.png" alt="">
+                    <p>Sucrose</p>
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <!-- Noi dung -->
+    <div class="characters">
+        <div id="ayaka" class="bg1  ">
+            <div>
+                <h2>Kamisato ayaka</h2>
+                <p class="md">Đại tiểu thư nhà Kamisato thuộc "Hiệp Hội Yashiro" Inazuma. Đoan trang thanh lịch, thông minh và mạnh mẽ. Đối nhân xử thế chân thành và khéo léo, được người dân Inazuma vô cùng yêu quý nên đã phong cho cô danh hiệu "Shirasagi Himegimi"
+                </p>
+                <p class="xs">Đại tiểu thư nhà Kamisato thuộc "Hiệp Hội Yashiro" Inazuma...</p>
+            </div>
+            <img class="imgcharacter md" src="./img/ayaka.png" alt="">
+            <img class="imgcharacter xs" src="./img/kamisato-xs.png" alt="">
+        </div>
+        <div id="kazuha" class="bg2 ">
+            <div>
+                <h2>kaedehara kazuha</h2>
+                <p class="md">Ronin Samurai đến từ Inazuma. Con người khiêm tốn có tính cách hòa nhã. Dưới vẻ ngoài trẻ trung phóng khoáng, ẩn chứa rất nhiều chuyện của quá khứ. Trông có vẻ tùy hứng nhưng trong lòng lại có quy tắc hành xử của riêng mình.
+                </p>
+                <p class="xs">Ronin Samurai đến từ Inazuma...</p>
+            </div>
+            <img class="imgcharacter md" src="./img/kaedehara.png" alt="">
+            <img class="imgcharacter xs" src="./img/kazuha-xs.png" alt="">
+        </div>
+        <div id="shogun" class="bg3">
+            <div>
+                <h2>Raiden Shogun</h2>
+                <p class="md">Raiden Shogun là hóa thân đáng sợ nhất của sấm sét trên thế giới này, cũng là chúa tể tối cao của Inazuma Shogunate. Mang theo sấm sét đầy quyền lực, kẻ hủy diệt theo đuổi con đường cô đơn mang tên vĩnh hằng.
+                </p>
+                <p class="xs">Raiden Shogun là hóa thân đáng sợ nhất của sấm sét trên thế giới này...</p>
+            </div>
+            <img class="imgcharacter md" src="./img/shogun.png" alt="">
+            <img class="imgcharacter xs" src="./img/raiden-xs.png" alt="">
+        </div>
+        <div id="kokomi" class="bg4">
+            <div>
+                <h2>Sangonomiya kokomi</h2>
+                <p class="md">Kokomi là Thánh Pháp Sư của đảo Watatsumi, cũng là thủ lĩnh tối cao đương nhiệm của đảo Watatsumi. Cô thông tuệ binh pháp, giỏi mưu lược và có những hiểu biết độc đáo về mặt quân sự, cũng có thể xử lý đâu ra đấy những việc như đối nội
+                    đối ngoại.
+                </p>
+                <p class="xs">Kokomi là Thánh Pháp Sư của đảo Watatsumi...</p>
+            </div>
+            <img class="imgcharacter md" src="./img/kokomi.png" alt="">
+            <img class="imgcharacter xs" src="./img/kokomi-xs.png" alt="">
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,398 @@
+    * {
+        box-sizing: border-box;
+    }
+    
+    html {
+        scroll-behavior: smooth;
+    }
+    
+    body {
+        margin: 0;
+        padding: 0;
+        background-color: bisque;
+        overflow: hidden;
+        background-size: cover !important;
+        position: relative;
+    }
+    
+    @font-face {
+        font-family: fffont;
+        src: url(../font/Play.ttf);
+    }
+    
+    @font-face {
+        font-family: fffteyvat;
+        src: url(../font/Game.ttf)
+    }
+    
+    @font-face {
+        font-family: fffcharacter;
+        src: url(../font/evanescent.ttf)
+    }
+    
+    .characters h2 {
+        font-family: fffcharacter;
+    }
+    
+    .main {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        z-index: 99999;
+    }
+    
+    .toplevel.md .firstlevel {
+        padding: 0;
+        position: absolute;
+        text-align: center;
+        display: none;
+        bottom: -31px;
+        left: 130px;
+        cursor: pointer;
+        text-transform: uppercase;
+        color: rgb(255, 239, 239);
+    }
+    
+    .toplevel.md .firstlevel>li {
+        background-color: rgb(52 86 99 / 23%);
+        width: 150px;
+        height: 65px;
+        padding-top: 10px;
+        filter: drop-shadow(2px 4px 6px transparent);
+        position: relative;
+        font-family: 'fffont';
+    }
+    
+    .toplevel.md .firstlevel>li:hover {
+        background-color: rgb(52 86 99 / 33%);
+    }
+    
+    .toplevel.md .firstlevel>li:hover ul {
+        display: inline;
+    }
+    
+    .toplevel.xs .firstlevel {
+        padding: 0;
+        text-align: center;
+        text-transform: uppercase;
+        color: rgb(255, 239, 239);
+    }
+    
+    .toplevel.xs .firstlevel>li {
+        padding-top: 10px;
+        filter: drop-shadow(2px 4px 6px transparent);
+        position: relative;
+    }
+    
+    .levelsecond {
+        padding: 0;
+        position: absolute;
+        text-align: center;
+        display: none;
+        bottom: -131px;
+        left: 0px;
+    }
+    
+    .levelsecond>li {
+        background-color: rgb(52 86 99 / 23%);
+        width: 150px;
+        height: 50px;
+        padding-top: 10px;
+        filter: drop-shadow(2px 4px 6px transparent);
+        position: relative;
+    }
+    
+    .levelsecond>li:hover {
+        background-color: rgb(52 86 99 / 33%);
+    }
+    
+    .levelsecond>li:hover ul {
+        display: inline;
+    }
+    
+    .toplevel {
+        display: flex;
+        justify-content: center;
+        background-color: rgb(52 86 99 / 33%);
+        margin: 0;
+        padding: 0;
+    }
+    
+    .toplevel>li {
+        list-style: none;
+        padding: 0 20px;
+        font-size: 20px;
+        display: flex;
+        align-items: center;
+        position: relative;
+    }
+    
+    .toplevel.md>li:hover {
+        filter: drop-shadow(2px 4px 6px black);
+    }
+    
+    .toplevel.md li:hover>ul {
+        display: inline;
+    }
+    
+    .toplevel>li li {
+        list-style: none;
+    }
+    
+    .toplevel>li a {
+        text-decoration: none;
+        color: rgb(255, 239, 239);
+        text-transform: uppercase;
+        transition: all .3s ease-in-out;
+        font-family: 'fffont';
+    }
+    
+    .toplevel>li a:hover {
+        transform: scale(1.2);
+    }
+    
+    .characters {
+        margin: 0;
+    }
+    
+    .menuleft {
+        position: fixed;
+        z-index: 99;
+    }
+    
+    .bg1,
+    .bg2,
+    .bg3,
+    .bg4 {
+        min-height: 100vh;
+        position: relative;
+        object-fit: cover;
+        z-index: -2;
+    }
+    
+    .imgcharacter {
+        position: absolute;
+        z-index: -1;
+        right: 0;
+        top: 0;
+        cursor: pointer;
+        height: 100%;
+    }
+    
+    .menuleft>ul>li>a {
+        color: rgb(0, 0, 0);
+        text-decoration: none;
+        font-size: large;
+        font-weight: bold;
+        font-family: fffont;
+        font-weight: 900
+    }
+    
+    .menuleft>ul>li>a>img {
+        position: relative;
+    }
+    
+    .menuleft>ul>li {
+        border: solid 1px white;
+        border-radius: 10px 10px 5px 5px;
+        padding-bottom: 0 !important;
+        margin-bottom: 20px;
+        position: relative;
+    }
+    
+    .menuleft>ul>li::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        background: white;
+        width: 100%;
+        height: 0;
+        z-index: -1;
+        opacity: .3;
+        border-radius: 50%;
+        transition: all .3s ease-in-out;
+    }
+    
+    .menuleft>ul>li:hover::before {
+        height: 100%;
+        border-radius: 10px 10px 5px 5px;
+    }
+    
+    .menuleft>ul>li>a>p {
+        margin: 0;
+        padding: 5px 0;
+        background: white;
+        transition: all .3s ease-in-out;
+    }
+    
+    .menuleft>ul>li:hover p {
+        background-color: rgba(121, 16, 21, 0.313);
+    }
+    
+    .menuleft>ul>Li {
+        list-style: none;
+        text-align: center;
+        padding: 20px 0;
+    }
+    
+    .bg1 p {
+        line-height: 30px;
+        font-size: 20px;
+        color: rgb(255, 255, 255);
+        padding: 30px;
+        background-color: rgba(0, 0, 0, 0.342);
+        border-radius: 3px;
+        cursor: pointer;
+        font-family: fffont;
+        letter-spacing: 2px;
+    }
+    
+    .bg1 p::before,
+    .bg2 p::before,
+    .bg3 p::before,
+    .bg4 p::before {
+        content: "▶";
+        padding-right: 20px;
+    }
+    
+    .bg1 h2 {
+        margin-left: 190px;
+        color: white;
+        text-transform: uppercase;
+        letter-spacing: 5px;
+        border-bottom: 2px solid white;
+        transition: all .3s ease-in-out;
+        filter: drop-shadow(2px 4px 6px black);
+        cursor: pointer;
+    }
+    
+    .bg1 h2:hover {
+        transform: scale(1.1);
+    }
+    
+    .bg1 {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        width: 100%;
+        align-items: center;
+    }
+    
+    .bg2 p {
+        line-height: 30px;
+        font-size: 20px;
+        margin-left: 220px;
+        color: rgb(255, 255, 255);
+        padding: 30px;
+        background-color: rgba(0, 0, 0, 0.342);
+        border-radius: 3px;
+        cursor: pointer;
+        font-family: fffont;
+        letter-spacing: 2px;
+    }
+    
+    .bg2 h2 {
+        margin-left: 220px;
+        color: white;
+        text-transform: uppercase;
+        letter-spacing: 5px;
+        border-bottom: 2px solid white;
+        filter: drop-shadow(2px 4px 6px black);
+        transition: all .3s ease-in-out;
+        cursor: pointer;
+    }
+    
+    .bg2 h2:hover {
+        transform: scale(1.1);
+    }
+    
+    .bg2 {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        width: 100%;
+        align-items: center;
+    }
+    
+    .bg3 p {
+        line-height: 30px;
+        font-size: 20px;
+        margin-left: 180px;
+        color: rgb(255, 255, 255);
+        padding: 30px;
+        background-color: rgba(0, 0, 0, 0.342);
+        border-radius: 3px;
+        cursor: pointer;
+        font-family: fffont;
+        letter-spacing: 2px;
+    }
+    
+    .bg3 h2 {
+        margin-left: 181px;
+        color: white;
+        text-transform: uppercase;
+        letter-spacing: 5px;
+        border-bottom: 2px solid white;
+        filter: drop-shadow(2px 4px 6px black);
+        transition: all .3s ease-in-out;
+        cursor: pointer;
+    }
+    
+    .bg3 h2:hover {
+        transform: scale(1.1);
+    }
+    
+    .bg3 {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        width: 100%;
+        align-items: center;
+    }
+    
+    .bg4 p {
+        line-height: 30px;
+        font-size: 20px;
+        margin-left: 180px;
+        color: rgb(255, 255, 255);
+        padding: 30px;
+        background-color: rgba(0, 0, 0, 0.342);
+        border-radius: 3px;
+        cursor: pointer;
+        font-family: fffont;
+        letter-spacing: 2px;
+    }
+    
+    .bg4 h2 {
+        margin-left: 190px;
+        color: white;
+        text-transform: uppercase;
+        letter-spacing: 5px;
+        border-bottom: 2px solid white;
+        filter: drop-shadow(2px 4px 6px black);
+        transition: all .3s ease-in-out;
+        cursor: pointer;
+    }
+    
+    .bg4 h2:hover {
+        transform: scale(1.1);
+    }
+    
+    .bg4 {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        width: 100%;
+        align-items: center;
+    }
+    
+    .bg1 div,
+    .bg2 div,
+    .bg3 div,
+    .bg4 div {
+        position: relative;
+        right: -50px;
+    }

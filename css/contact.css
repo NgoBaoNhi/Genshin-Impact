@@ -1,0 +1,186 @@
+        .text-danger {
+            color: red;
+            box-sizing: border-box;
+            width: 100%;
+            display: inline-block;
+            text-align: right;
+            height: 30px;
+            padding-right: calc(calc(calc(100% - 230px) / 2) - 170px);
+            filter: drop-shadow(3px 3px 2px rgb(255, 255, 255));
+        }
+        
+        .contact label {
+            display: inline-block;
+            width: 200px;
+        }
+        
+        .contact {
+            margin: 40px;
+        }
+        
+        .contact-row {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            line-height: 4rem;
+        }
+        
+        #yname,
+        #yemail,
+        #subject,
+        #message {
+            width: calc(100% - 230px);
+            height: 60px;
+            border: 3px solid #ade062;
+        }
+        
+        #yname:hover,
+        #yemail:hover,
+        #subject:hover,
+        #message:hover {
+            background: #dacce2;
+            border: 3px solid #437d4f;
+        }
+        
+        textarea {
+            width: 60%;
+            height: 50px;
+            border: 3px solid #ade062;
+        }
+        
+        #subject {
+            width: calc(100% - 230px);
+            height: 50px;
+        }
+        
+        #message {
+            width: calc(100% - 230px);
+            height: 70px;
+        }
+        
+        .xingqui {
+            position: absolute;
+            filter: inherit;
+            bottom: 0;
+            right: 0;
+            top: -50px;
+            width: 77%;
+            height: 81rem;
+            z-index: -1;
+        }
+        
+        #back-home {
+            position: absolute;
+            top: 0;
+            left: 0;
+            padding: 20px;
+            border-bottom-right-radius: 50%;
+            background: rgba(0, 0, 0, 0.294);
+            color: white;
+            font-size: 25px;
+            text-decoration: none;
+            z-index: 99999;
+            font-weight: bold;
+        }
+        
+        .contact-row.submit {
+            display: flex;
+        }
+        /* /* mobile: width <740px */
+        
+        @media screen and (max-width: 46em) {
+            .botlogo {
+                display: none;
+            }
+            .md {
+                display: none;
+            }
+            .contact {
+                margin: 0;
+                margin: 15px;
+            }
+            .contact h1 {
+                font-size: 50px;
+                padding: 0;
+            }
+            .contact-row {
+                font-size: 20px;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+            button {
+                right: 0;
+                top: 0;
+            }
+            .contact label {
+                text-align: center;
+            }
+            #yname,
+            #yemail,
+            #subject,
+            #message {
+                width: 100%;
+                text-align: center;
+            }
+            .xingqui.xs {
+                width: 120%;
+                height: unset;
+            }
+            .text-danger {
+                font-size: 17px;
+            }
+        }
+        /* tablet: width >=740px and width <1024px*/
+        
+        @media screen and (min-width: 46em) and (max-width: 64em) {
+            .md {
+                display: none;
+            }
+            .contact h1 {
+                font-size: 60px;
+            }
+            .contact {
+                margin: 0;
+                margin: 15px;
+            }
+            .contact-row {
+                font-size: 20px;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+            button {
+                right: 0;
+                top: 0;
+            }
+            .contact label {
+                text-align: center;
+            }
+            #yname,
+            #yemail,
+            #subject,
+            #message {
+                width: 100%;
+                text-align: center;
+            }
+            .xingqui.xs {
+                width: 90%;
+                height: unset;
+            }
+            .text-danger {
+                font-size: 23px;
+            }
+            .botlogo {
+                text-align: center;
+                position: unset;
+                padding-bottom: 20px;
+            }
+        }
+        /* pc: width >= 1024px */
+        
+        @media screen and (min-width: 64em) {
+            .xs {
+                display: none;
+            }
+        }

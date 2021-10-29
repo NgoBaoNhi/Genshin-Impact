@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/index1.css">
+    <link rel="stylesheet" href="./css/reponsive.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+    <title>Nhân vật tướng ở Mondstadt</title>
+</head>
+
+<body>
+    <!-- hàng 1 -->
+    <div class="main">
+        <nav>
+            <ul class="toplevel md">
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./index4.html">About</a></li>
+                <li><a href="">Character</a>
+                    <ul class="levelsecond">
+                        <li><a href="./index1.html#diluc">Mondstadt</a></li>
+                        <li><a href="./index2.html#xiao">Liyue</a></li>
+                        <li><a href="./index3.html#ayaka">Inazuma</a>
+                            <ul class="firstlevel">
+                                <li>Đang cập nhật...</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="./index.html"><img src="./img/LOGO.png" alt=""></a>
+                </li>
+
+                <li><a href="./contact.html">Contact</a></li>
+                <li><a href="./order.html">Order</a></li>
+                <li><a target="_blank" href="https://www.youtube.com/c/GenshinImpact">Trailer</a></li>
+            </ul>
+            <label for="menu-mobile" class="fa fa-bars xs" data-toggle="collapse" data-target="#m-mobile" role="button" aria-expanded="false" aria-controls="firstlevel"></label>
+            <input id="menu-mobile" type="checkbox" hidden/>
+            <label for="menu-mobile" id="theme-overlay"></label>
+            <ul id="m-mobile" class="toplevel xs collapse">
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./index4.html">About</a></li>
+                <li>
+                    <a data-toggle="collapse" href="#firstlevel" role="button" aria-expanded="false" aria-controls="firstlevel">
+                Characters
+              </a>
+                    <div class="collapse" id="firstlevel">
+                        <ul>
+                            <li><a href="./index1.html#diluc">&nbsp; Mondstadt</a></li>
+                            <li><a href="./index2.html#xiao">&nbsp; Liyue</a></li>
+                            <li>
+                                <a href="./index3.html#ayaka">
+                            &nbsp; Inazuma
+                        </a><a data-toggle="collapse" href="#firstlevel1" role="button" aria-expanded="false" aria-controls="firstlevel1"><i class="fa fa-chevron-down"></i></a>
+
+                            </li>
+                            <li class="collapse" id="firstlevel1">
+                                <ul class="firstlevel">
+                                    <li>&nbsp; Updating...</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+
+                </li>
+                <li><a href="./contact.html">Contact</a></li>
+                <li><a href="./order.html">Order</a></li>
+                <li><a target="_blank" href="https://www.youtube.com/c/GenshinImpact">Trailer</a></li>
+                <li class="headerlogo">
+                    <a href="./index.html"><img src="./img/LOGO.png" alt=""></a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+    <!-- Menmu trai -->
+    <nav class="menuleft">
+        <ul>
+            <li>
+                <a href="#diluc">
+                    <img src="./img/avaliduc.png" alt="">
+                    <p>Diluc</p>
+                </a>
+            </li>
+            <li>
+                <a href="#diona">
+                    <img src="./img/avadiona.png" alt="">
+                    <p>Diona</p>
+                </a>
+            </li>
+            <li>
+                <a href="#mona">
+                    <img src="./img/avamonac.png" alt="">
+                    <p>Mona</p>
+                </a>
+            </li>
+            <li>
+                <a href="#sucrose">
+                    <img src="./img/avasucro.png" alt="">
+                    <p>Sucrose</p>
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <!-- Noi dung -->
+    <div class="characters">
+        <div id="diluc" class="bg1">
+            <div>
+                <h2>Diluc</h2>
+                <p class="md">Là đại gia giàu nhất Mondstadt, Diluc thường để lại ấn tượng cho người khác là một qúy công tử hoàn mỹ phong độ đường đường.Nhưng bộ mặt thật của hắn, là một chiến sĩ với niềm tin kiên định, ý chí "Bất chấp mọi giá bảo vệ Mondstadt"của
+                    hắn hừng hực như lửa đốt, khiến cho hắn có thể dùng khí thế mạnh mẽ, không chút do dự để đánh lui kẻ địch.
+                </p>
+                <p class="xs">Là đại gia giàu nhất Mondstadt...
+                </p>
+            </div>
+            <img class="imgcharacter md" src="./img/diluc.png" alt="">
+            <img class="imgcharacter xs" src="./img/liduc-xs.png" alt="">
+        </div>
+        <div id="diona" class="bg2">
+            <div>
+                <h2>Diona</h2>
+                <p class="md">Người pha chế rượu được yêu thích của Quán Rượu Đuôi Mèo, là ngôi sao mới trong ngành rượu của Mondstadt, kẻ thách thức lớn nhất đối với thế lực truyền thống. Cô gái có tai và đuôi mèo sinh ra ở Thanh Tuyền Trấn, chỉ cần là rượu do chính
+                    tay Diona pha chế, sẽ đều biến thành loại rượu ngon không thể tưởng tượng nổi. Tuy nhiên đối với người cực kì ghét rượu như cô ấy, thì đây rốt cuộc là "chúc phúc" hay "lời nguyền" nhỉ?</p>
+                <p class="xs">Người pha chế rượu được yêu thích của Quán Rượu Đuôi Mèo...
+                </p>
+            </div>
+            <img class="imgcharacter md" src="./img/diona.png" alt="">
+            <img class="imgcharacter xs" src="./img/diona-xs.png" alt="">
+        </div>
+        <div id="mona" class="bg3">
+            <div>
+                <h2>Mona</h2>
+                <p class="md">Thuật sĩ thần bí, tự xưng là nhà chiêm tinh vĩ đại, có thực lực bất phàm, thông minh cao ngạo. Dù sống cuộc sống cơ cực, nghèo khó những cô ấy nhất quyết không dùng bói toán để trục lợi... Chính sự kiên trì này khiến Mona luôn trăn trở
+                    việc mưu sinh.</p>
+                <p class="xs">Thuật sĩ thần bí...
+                </p>
+            </div>
+            <img class="imgcharacter md" src="./img/mona.png" alt="">
+            <img class="imgcharacter xs" src="./img/mona-xs.png" alt="">
+        </div>
+        <div id="sucrose" class="bg4">
+            <div>
+                <h2>Sucrose</h2>
+                <p class="md">Giả Kim Thuật Sĩ có sự hiếu kỳ với mọi thứ của thế gian này thuộc Đội Kỵ Sĩ Tây Phong, là trợ thủ của Albedo. Hướng nghiên cứu là "Giả Kim Sinh Vật". Cô ấy mong muốn dùng thuật Giả Kim để cải tạo hình thái sinh mệnh, khiến cho thế giới
+                    này trở nên phong hơn. Tuy rằng trong quá trình cải tạo sẽ thỉnh thoảng xuất hiện một số sản vật hơi kỳ dị, nhưng nhìn chung mà nói, Sucrose rất xuất sắc trong lĩnh vực giả kim sinh vật.
+                </p>
+                <p class="xs">Giả Kim Thuật Sĩ của thế gian...
+                </p>
+            </div>
+            <img class="imgcharacter md" src="./img/sucrose.png" alt="">
+            <img class="imgcharacter xs" src="./img/sucro-xs.png" alt="">
+        </div>
+    </div>
+</body>
+
+</html>

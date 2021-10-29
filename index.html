@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="./css/asm2.css">
+    <link rel="stylesheet" href="./css/reponsive.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+    <title>Genshin Impact</title>
+</head>
+
+<body>
+
+    <div class="main">
+        <nav>
+            <ul class="toplevel md">
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./index4.html">About</a></li>
+                <li><a href="">Character</a>
+                    <ul class="levelsecond">
+                        <li><a href="./index1.html#diluc">Mondstadt</a></li>
+                        <li><a href="./index2.html#xiao">Liyue</a></li>
+                        <li><a href="./index3.html#ayaka">Inazuma</a>
+                            <ul class="firstlevel">
+                                <li>Đang cập nhật...</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="./index.html"><img src="./img/LOGO.png" alt=""></a>
+                </li>
+
+                <li><a href="./contact.html">Contact</a></li>
+                <li><a href="./order.html">Order</a></li>
+                <li><a target="_blank" href="https://www.youtube.com/c/GenshinImpact">Trailer</a></li>
+            </ul>
+            <label for="menu-mobile" class="fa fa-bars xs" data-toggle="collapse" data-target="#m-mobile" role="button" aria-expanded="false" aria-controls="firstlevel"></label>
+            <input id="menu-mobile" type="checkbox" hidden/>
+            <label for="menu-mobile" id="theme-overlay"></label>
+            <ul id="m-mobile" class="toplevel xs collapse">
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./index4.html">About</a></li>
+                <li>
+                    <a data-toggle="collapse" href="#firstlevel" role="button" aria-expanded="false" aria-controls="firstlevel">
+                Characters
+              </a>
+                    <div class="collapse" id="firstlevel">
+                        <ul>
+                            <li><a href="./index1.html#diluc">&nbsp; Mondstadt</a></li>
+                            <li><a href="./index2.html#xiao">&nbsp; Liyue</a></li>
+                            <li>
+                                <a href="./index3.html#ayaka">
+                            &nbsp; Inazuma
+                        </a><a data-toggle="collapse" href="#firstlevel1" role="button" aria-expanded="false" aria-controls="firstlevel1"><i class="fa fa-chevron-down"></i></a>
+
+                            </li>
+                            <li class="collapse" id="firstlevel1">
+                                <ul class="firstlevel">
+                                    <li>&nbsp; Updating...</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+
+                </li>
+                <li><a href="./contact.html">Contact</a></li>
+                <li><a href="./order.html">Order</a></li>
+                <li><a target="_blank" href="https://www.youtube.com/c/GenshinImpact">Trailer</a></li>
+                <li class="headerlogo">
+                    <a href="./index.html"><img src="./img/LOGO.png" alt=""></a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="container" id="home-container">
+        <div id="description">
+            <h1>ZHONGLI</h1>
+            <div class="content md">
+                <div class="theme">
+                    <div class="row">
+                        <p><span class="icon">✟</span> Vị khách bí ẩn của Vãng Sinh Đường. Anh ta có vẻ bề ngoài khôi ngô tuấn tú, phong độ lịch lãm và sở hữu kiến thức vượt xa người thường </p>
+                    </div>
+                    <div class="row">
+                        <p><span class="icon">✟</span> Mặc dù là có lai lịch thần bí, nhưng anh ấy lại biết lễ nghe, hiểu quy định. Tọa trấn Vãng Sinh Đường, có thể thực hiện các nghi lễ của vạn vật trong thời đất.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="content xs">
+                <div class="row">
+                    <p class="icon">✟</p>
+                    <p>Vị khách bí ẩn của Vãng Sinh Đường...</p>
+                </div>
+            </div>
+            <div class="bg-mobile xs">
+                <img src="./img/zongli-xs.png" alt="">
+            </div>
+
+            <!-- hàng 3 -->
+            <div class="thumnail md">
+                <a href=""><img src="./img/zongli1.jpg" alt=""></a>
+                <a href=""><img src="./img/zongli2.jpg" alt=""></a>
+                <a href=""><img src="./img/zongli3.jpg" alt=""></a>
+            </div>
+            <div id="thumnail" class="carousel slide xs" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="./img/zongli1.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./img/zongli2.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./img/zongli3.jpg" class="d-block w-100" alt="...">
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#thumnail" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#thumnail" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+            <!-- hàng 4 -->
+            <div class="social">
+                <ul>
+                    <li>
+                        <a href=""><img src="./img/ngto1.png" alt=""></a>
+                    </li>
+                    <li>
+                        <a href=""><img src="./img/ngto2.png" alt=""></a>
+                    </li>
+                    <li>
+                        <a href=""><img src="./img/ngto3.png" alt=""></a>
+                    </li>
+                    <li>
+                        <a href=""><img src="./img/paimon.png" alt=""></a>
+                    </li>
+                    <li>
+                        <a href=""><img src="./img/ngto4.png" alt=""></a>
+                    </li>
+                    <li>
+                        <a href=""><img src="./img/ngto5.png" alt=""></a>
+                    </li>
+                    <li>
+                        <a href=""><img src="./img/ngto6.png" alt=""></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

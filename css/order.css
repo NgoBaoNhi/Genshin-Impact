@@ -1,0 +1,210 @@
+.contact {
+    text-align: center;
+}
+
+#cosplay,
+#yname,
+#date {
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    font-size: 17px;
+}
+
+.form-control {
+    border: 3px solid #ade062;
+}
+
+#cosplay:hover,
+#yname:hover,
+textarea:hover,
+#date:hover {
+    background: #dacce2;
+    border: 3px solid #437d4f;
+}
+
+button {
+    position: relative;
+    top: 10px;
+    width: 30%;
+    height: 50px;
+    right: 0;
+    margin-bottom: 20px;
+}
+
+#form-order {
+    display: flex;
+    justify-content: center;
+}
+
+#form-order .preview-video {
+    flex: 1;
+    margin: 40px;
+    margin-left: 10px;
+    position: absolute;
+    top: -1000px;
+    opacity: 0;
+    transition: all .4s ease-in-out;
+}
+
+#form-order .preview-video.active {
+    position: sticky;
+    top: 40px;
+    opacity: 1;
+}
+
+#form-order .preview-video video {
+    width: 100%;
+}
+
+.preview-video>div.preview-content {
+    background: white;
+    color: #6b7687;
+    padding: 20px;
+    border-bottom-right-radius: 40px;
+    font-weight: normal;
+    line-height: 25px;
+}
+
+.cs {
+    font-size: 21px;
+    color: #fff6d0;
+    font-family: cursive;
+    border-radius: 5px;
+    background: #7283a380;
+    text-align: left;
+}
+
+.form-check-input[type=checkbox] {
+    border-radius: 1.25em;
+}
+
+.form-check .form-check-input {
+    margin-top: 20px;
+}
+
+.form-check.contact-row {
+    color: white;
+}
+
+.text-danger {
+    color: red;
+    position: relative;
+    left: 0;
+    filter: drop-shadow(3px 3px 2px rgb(255, 255, 255));
+}
+
+#preview-hair {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 20px;
+}
+
+.preview-control {
+    position: sticky;
+    top: 40px;
+}
+
+.preview-hairs {
+    position: absolute;
+    right: 0;
+    min-height: 360px;
+    margin: 40px;
+    margin-top: 40px;
+    z-index: 9999;
+    bottom: 25rem;
+}
+
+#preview-hair img {
+    width: 10rem;
+    height: 10rem;
+    transform-origin: center;
+    transform: scale(0);
+    opacity: .3;
+    transition: all .5s ease-in-out;
+}
+
+#preview-hair img.i-active {
+    transform-origin: center;
+    transform: scale(1);
+    opacity: 1;
+}
+
+#back-home {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 20px;
+    border-bottom-right-radius: 50%;
+    background: rgba(0, 0, 0, 0.294);
+    color: white;
+    font-size: 25px;
+    text-decoration: none;
+    z-index: 99999;
+    font-weight: bold;
+}
+
+#back-home:hover i {
+    transform: rotate(90deg);
+}
+
+
+/* /* mobile: width <740px */
+
+@media screen and (max-width: 46em) {
+    .preview-control.md {
+        display: none;
+    }
+    .contact h1 {
+        font-size: 95px;
+    }
+    .contact {
+        margin: 16px;
+        padding: 6px;
+        font-size: 18px;
+        letter-spacing: unset;
+    }
+    .cs {
+        font-size: 17px;
+        margin: 5px;
+    }
+}
+
+
+/* tablet: width >=740px and width <1024px*/
+
+@media screen and (min-width: 46em) and (max-width: 64em) {
+    .preview-video>div.preview-content {
+        display: none;
+    }
+    .cs {
+        font-size: 21px;
+    }
+    .contact {
+        margin: 15px;
+        font-size: 20px;
+        padding: 12px;
+    }
+    .preview-control.md {
+        display: none;
+    }
+    #form-order {
+        justify-content: center;
+    }
+}
+
+
+/* pc: width >= 1024px */
+
+@media screen and (min-width: 64em) {
+    .cs {
+        font-size: 21px;
+        margin: 30px;
+        margin: 5px;
+    }
+    #preview-hair img {
+        width: 9rem;
+        height: 9rem;
+    }
+}
